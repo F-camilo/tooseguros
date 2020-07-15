@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.Controllers.ContaCorrenteController.Get">
+            <summary>
+            Buscar Conta Corrente
+            </summary>
+            <response code="200">Retorna Lista de Conta Corrente e seus Lançamentos.</response>
+        </member>
+        <member name="M:API.Controllers.ContaCorrenteController.Post(TooSeguros.Domain.Entities.ContaCorrente)">
+            <summary>
+            Criar uma nova Conta Corrente
+            </summary>
+            <param name="model"></param>
+            <response code="200">Retorna JSON com um result(Boolean), message(String) e a um object(request).</response>
+        </member>
+        <member name="M:API.Controllers.LancamentoController.Post(TooSeguros.Domain.Entities.Lancamento)">
+            <summary>
+            Criar um novo Lançamento
+            </summary>
+            <param name="model"></param>
+            <response code="200">Retorna JSON com um result(Boolean), message(String) e a um object(request).</response>
+        </member>
+        <member name="M:API.Controllers.TransacaoController.Post(TooSeguros.Domain.Dto.TransacaoDto)">
+            <summary>
+            Criar uma nova Transação Débito na Origem e Crédito no Destino
+            </summary>
+            <param name="model"></param>
+            <response code="200">Retorna JSON com um result(Boolean), message(String) e a um object(request).</response>
+        </member>
+        <member name="M:API.Controllers.TransacaoController.debit(TooSeguros.Domain.Dto.TransacaoDebitDto)">
+            <summary>
+            Criar uma nova Transação de Débito
+            </summary>
+            <param name="model"></param>
+            <response code="200">Retorna JSON com um result(Boolean), message(String) e a um object(request).</response>
+        </member>
+        <member name="M:API.Controllers.TransacaoController.credit(TooSeguros.Domain.Dto.TransacaoCreditDto)">
+            <summary>
+            Criar uma nova Transação de Crédito
+            </summary>
+            <param name="model"></param>
+            <response code="200">Retorna JSON com um result(Boolean), message(String) e a um object(request).</response>
+        </member>
+        <member name="M:API.Controllers.UsuarioController.Post(TooSeguros.Domain.Dto.UsuarioDto)">
+            <summary>
+            Autenticação
+            </summary>
+            <param name="model"></param>
+            <response code="200">Retorna Token de Autenticação ou JSON com um result(Boolean), message(String) e a um object(request).</response>
+        </member>
+    </members>
+</doc>
